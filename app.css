@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(127, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --bg-color:hsl(200, 15%, 92%);
+    --shadow-hover:rgba(43, 43, 43, 0.438);
+}
+body{
+    font-size: 18px;
+    background-color: var(--bg-color);
+    background-image: url('./images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+#main-container{
+    margin: 8rem auto 0;
+}
+ .content{
+    margin: 4rem 0 2.5rem;
+}
+#main-container h1,h2,h3,h4,h5,h6{
+    margin-top: 1.2rem;
+    color: var(--Dark-Grayish-Blue);
+}
+#main-container p{
+    color: var(--Grayish-Blue);
+    margin: 1.2rem 0 1rem;
+}
+#main-container button{
+    transition: all 500ms ease-in-out;
+    margin-top: 1.2rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    color:#fff ;
+    border: none;
+    margin-right: 1rem;
+    box-shadow: 0px 2px 30px var(--Grayish-Blue);
+}
+#main-container button:hover{
+    box-shadow: 0px 2px 50px var(--shadow-hover);
+    transform: scale(1.0212);
+    opacity: .95;
+}
+.ios-btn{
+    background-color: var(--Strong-Cyan);
+}
+.mac-btn{
+    background-color: var(--Light-Blue);
+}
+.clipboard {
+    margin: 10.4rem auto; 
+}
+section.footer a{
+    color: var(--Grayish-Blue);
+}
+
+section.footer a img:hover{
+    cursor: pointer;
+    opacity: 0.85;
+}
+section.footer a:hover{
+    cursor: pointer;
+    color: var(--Grayish-Blue);
+}
+
+@media screen and(max-width:375px) {
+    body{
+        background-image: url('./images/bg-header-mobile.png');
+    }
+    
+}
